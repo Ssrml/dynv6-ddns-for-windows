@@ -27,7 +27,8 @@
 
 **关于配置文件以及自动化部署**
 <br>
-众所周知：Windows的计划任务无法直接运行power shell脚本
+众所周知：Windows的计划任务无法直接运行powershell脚本,
+<br>
 所以，与其用一堆参数去调用power shell，不如直接写个bat。
 假设你把脚本放在了：D:\autorun\ddns
 则bat脚本这么写：
