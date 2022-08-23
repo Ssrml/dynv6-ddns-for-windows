@@ -24,3 +24,15 @@
 
 <br>
 
+
+**关于配置文件以及自动化部署**
+众所周知：Windows的计划任务无法直接运行power shell脚本
+所以，与其用一堆参数去调用power shell，不如直接写个bat。
+假设你把脚本放在了：D:\autorun\ddns
+则bat脚本这么写：
+'''
+@echo off & setlocal enabledelayedexpansion
+D:
+cd D:\AUTORUN\DDNS
+powershell "D:\AUTORUN\DDNS\dynv6..ps1"
+'''
